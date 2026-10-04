@@ -5,9 +5,9 @@ services:
     restart: always
     environment:
       # === Required Settings
-      MAIN_URL: 'https://postiz.dacitebrands.com'
-      FRONTEND_URL: 'https://postiz.dacitebrands.com'
-      NEXT_PUBLIC_BACKEND_URL: 'https://postiz.dacitebrands.com/api'
+      MAIN_URL: 'https://social.dacitebrands.com'
+      FRONTEND_URL: 'https://social.dacitebrands.com'
+      NEXT_PUBLIC_BACKEND_URL: 'https://social.dacitebrands.com/api'
       JWT_SECRET: '${POSTIZ_JWT_SECRET}'
       DATABASE_URL: 'postgresql://postiz-user:${POSTIZ_DB_PASSWORD}@postiz-postgres:5432/postiz-db-local'
       REDIS_URL: 'redis://postiz-redis:6379'
