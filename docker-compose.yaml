@@ -209,7 +209,7 @@ services:
     image: postgres:16
     restart: always
     environment:
-      POSTGRES_PASSWORD: '${TEMPORAL_DB_PASSWORD}'
+      POSTGRES_PASSWORD: '${TEMPORAL_POSTGRES_PASSWORD}'
       POSTGRES_USER: temporal
     networks:
       - temporal-network
@@ -239,7 +239,7 @@ services:
       - DB=postgres12
       - DB_PORT=5432
       - POSTGRES_USER=temporal
-      - POSTGRES_PWD=${TEMPORAL_DB_PASSWORD}
+      - POSTGRES_PWD=${TEMPORAL_POSTGRES_PASSWORD}
       - POSTGRES_SEEDS=temporal-postgresql
       - DYNAMIC_CONFIG_FILE_PATH=config/dynamicconfig/development-sql.yaml
       - ENABLE_ES=true
